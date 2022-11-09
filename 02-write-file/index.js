@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const output = fs.createWriteStream(path.join(__dirname, 'text.txt'));
 
-stdout.write('Hello! Please, write you text.\n');
+stdout.write('Hello! Please, write your text.\n');
 stdin.on('data', (chunk) => {
   if (chunk.includes('exit')) {
     exit();
